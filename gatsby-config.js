@@ -27,6 +27,16 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: "gatsby-source-cosmicjs",
+      options: {
+        bucketSlug: "mycosmicproject", // Your CosmicJS bucket slug
+        objectTypes: ["pages"], // List of the object types you want to be able to request from Gatsby.
+        apiAccess: {
+          read_key: "JxLU8cFb7VwX2JbpEnVj2xwGvBp3HG9nEJzF1kCy4cioh8XgcH",
+        },
+      },
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
